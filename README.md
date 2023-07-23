@@ -36,9 +36,9 @@ Give a list of warehouses in the most optimal and modular way possible.
 The listing page should have these feature(you may add more)
 -> search the warehouses by warehouse name
 -> filter warehouse based on
-	-> city
-	-> cluster
-	-> space available limit
+	- city
+	- cluster
+	- space available limit
 
 **Page 2:**
 Click on an item should redirect to the warehouse details page.
