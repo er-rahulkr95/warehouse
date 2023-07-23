@@ -1,4 +1,4 @@
-
+import { toast } from "react-toastify";
 export const fetchWareHouseData = (state,action)=>{
     const wareHouseData = require("../../data/warehouse.json")
     return wareHouseData
@@ -30,5 +30,6 @@ export const updateWarehouse = (state,action)=>{
     const updatedDetails = action.payload.wareHouseList.map((warehouse)=>{
        return warehouse.id === action.payload.formData.id ? action.payload.formData : warehouse
     })
+    toast.success("Ware House Details Update Successfully")
     return updatedDetails
 }

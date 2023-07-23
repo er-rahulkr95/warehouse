@@ -46,6 +46,13 @@ tr {
     padding: 0.15rem 0.75rem;
 }
 
+.noResult{
+     text-align: center;
+    margin-top: 5rem ;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--blue-color);
+}
 @media screen and (min-width: 1200px) {
     .warehouseTable {
         table-layout: fixed;
@@ -53,5 +60,8 @@ tr {
 
     .tableContianer {
         height: 70vh;
+    }
+    .noResult{
+        width: 90vw;
     }
 }

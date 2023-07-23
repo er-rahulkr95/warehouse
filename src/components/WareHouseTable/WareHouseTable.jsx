@@ -19,7 +19,7 @@ const WareHouseTable = ({ perPageData }) => {
               <th>Live</th>
             </tr>
           </thead>
-          {perPageData.length > 0 && (
+          {perPageData.length > 0 ? (
             <>
               <tbody className={styles.warehouseTableBody}>
                 {perPageData.map((warehouse, index) => (
@@ -48,7 +48,7 @@ const WareHouseTable = ({ perPageData }) => {
                 ))}
               </tbody>
             </>
-          )}
+          ) : <div className={styles.noResult}>OOPs! No Result Found</div>}
         </table>
       </section>
     </>
