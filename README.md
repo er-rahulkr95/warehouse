@@ -33,9 +33,9 @@ The Project consists of two pages.
 **Page 1:**
 Give a list of warehouses in the most optimal and modular way possible.
 
-The listing page should have these feature(you may add more)
--> search the warehouses by warehouse name
--> filter warehouse based on
+The listing page should have these feature
+- search the warehouses by warehouse name
+- filter warehouse based on
 	- city
 	- cluster
 	- space available limit
