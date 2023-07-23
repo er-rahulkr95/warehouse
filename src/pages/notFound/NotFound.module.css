@@ -1,0 +1,12 @@
+.notFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notFoundText{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: var(--blue-color);
+}

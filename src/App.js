@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {Routes, Route } from 'react-router-dom';
+import WareHouseHome from './pages/wareHouseListHome/WareHouseHome';
+import WareHouseDetail from './pages/wareHouseDetails/WareHouseDetail';
+import NotFoundPage from './pages/notFound/NotFoundPage';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { loadWareHouseList } from './features/warehouseListing/wareHouseSlice';
 function App() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(loadWareHouseList());
+  }, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+              <Route path='/' element={<WareHouseHome />} />
+              <Route path='/wareHouse/details/:id' element={<WareHouseDetail/>} />
+              <Route path='*' element={<NotFoundPage/>} />    
+            </Routes>
+    </>
   );
 }
 

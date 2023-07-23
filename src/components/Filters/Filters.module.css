@@ -1,0 +1,34 @@
+.filterBar {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 20px 0px;
+}
+
+.filterBarTile {
+    border-right: 1px solid #999;
+    padding: 0px 20px;
+}
+
+.clearFilter {
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+.clearButton {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: 0;
+    border-radius: 0.2rem;
+    padding: 0.25rem 0.5rem;
+}
+
+@media screen and (max-width: 400px) {
+
+    .filterBarTile {
+        min-width: 23px;
+        height: 23px;
+        padding: 0px 2.5px;
+        margin: 0px 2.5px;
+    }
+
+}

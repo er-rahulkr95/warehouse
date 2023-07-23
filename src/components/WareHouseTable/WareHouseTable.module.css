@@ -1,0 +1,57 @@
+.tableContianer {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.warehouseTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableContianer thead th {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.75rem;
+}
+
+tr {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.warehouseTableBody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 500ms;
+    cursor: pointer;
+}
+
+.greenTile {
+    background-color: rgb(5, 214, 5);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 0.15rem 0.75rem;
+
+}
+
+.redTile {
+    background-color: rgb(211, 3, 3);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 0.15rem 0.75rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .warehouseTable {
+        table-layout: fixed;
+    }
+
+    .tableContianer {
+        height: 70vh;
+    }
+}

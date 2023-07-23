@@ -1,0 +1,15 @@
+.wareHouseDetailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.wareHouseDetail {
+    font-size: x-large;
+}
+
+.detailHeading {
+    font-weight: bolder;
+    text-transform: capitalize;
+}
